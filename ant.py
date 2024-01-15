@@ -7,7 +7,7 @@ class Ant:
         self.pos_y = pos_y
         self.rotation = 0
         self.field = field
-        self._move_map = {0: [0, 1], 1: [1, 0], 2: [0, -1], 3: [-1, 0]}
+        self._move_map = {0: [0, -1], 1: [-1, 0], 2: [0, 1], 3: [1, 0]}
 
     def step(self) -> bool:
         current_color = self.field.get_color(self.pos_x, self.pos_y)
