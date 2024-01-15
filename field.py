@@ -4,7 +4,7 @@ import numpy as np
 class Field:
     def __init__(self, size):
         self.size = size
-        self._field = np.zeros((size, size), dtype=np.uint8)
+        self._field = np.ones((size, size), dtype=np.uint8)
 
     def get_color(self, x, y):
         return self._field[x, y]
